@@ -1,8 +1,8 @@
-require 'test_helper'
+require File.dirname(__FILE__) + '/test_helper.rb'
+include JqGridHelper
 
-class JqGriddlerTest < ActiveSupport::TestCase
-  # Replace this with your real tests.
-  test "the truth" do
-    assert true
+class JqGridHelperTest < Test::Unit::TestCase
+  def test_tweet
+    assert_equal "Tweet! Hello", tweet("Hello")
   end
 end
